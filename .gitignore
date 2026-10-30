@@ -1,0 +1,33 @@
+# dependencies and build output
+node_modules/
+dist/
+dist-ssr/
+.vite/
+.cache/
+.parcel-cache/
+coverage/
+
+# secrets and local config (never commit these)
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+secrets.*
+credentials*.json
+service-account*.json
+
+# logs, editor and OS files
+*.log
+npm-debug.log*
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/*
+!.vscode/extensions.json
+*.swp
+
+# deployment tooling
+.vercel/
+.netlify/
