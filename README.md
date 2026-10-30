@@ -1,108 +1,323 @@
-# Parimala Dharshini M: Portfolio (React + Vite)
+# Parimala Dharshini M. | Personal Portfolio
 
-All content lives in **`src/data/site.js`**. Components are in `src/components/`, styles in `src/styles.css`.
+A modern, responsive personal portfolio built with **React and Vite**, showcasing my technical skills, projects, internships, research work, and professional experience in Artificial Intelligence, Machine Learning, and Software Development.
 
-## Run it on your computer
+🌐 **GitHub Repository:** [parimala-portfolio](https://github.com/Parimala-15/parimala-portfolio)
 
-Install Node.js 18+ (LTS) from https://nodejs.org, then in this folder:
+---
 
-```bash
-node -v                 # should print v18 or higher
-npm install             # creates package-lock.json: commit that file too
-npm run dev             # http://localhost:5173
-npm run build           # production build into dist/
-npm run preview         # serve the production build locally
-```
+## About Me
 
-> **Build status:** the upgrade was made in an environment that could not reach the npm registry, so `npm install`, `npm run build` and `npm audit` were **not run** there. The app was compiled with esbuild and tested in a real browser (see the notes at the end of this file). Run `npm install && npm run build && npm audit` yourself and send me any error.
+I am an Information Technology undergraduate at **SRM Institute of Science and Technology, Chennai**, with a strong interest in Artificial Intelligence, Machine Learning, Generative AI, and Full-Stack Development.
 
-In `npm run dev`, placeholder links show as dashed **TODO** badges. Results marked `verified: false` are labelled **Self-reported result**.
+I enjoy building practical technology solutions, exploring LLM-based applications, and applying machine learning techniques to real-world problems.
 
-## Resume (public/resume.pdf)
+This portfolio brings together my academic background, technical expertise, internships, research contributions, and projects in one place.
 
-1. Rename your latest resume to exactly `resume.pdf`.
-2. Copy it into the `public/` folder, so the path is `public/resume.pdf`.
-3. Restart `npm run dev` (or rebuild). The "Download resume" and "Resume (PDF)" buttons appear automatically and download as `Parimala_Dharshini_Resume.pdf`.
+## Portfolio Features
 
-If `public/resume.pdf` does not exist, the resume buttons are hidden instead of leading to a 404. Use one master resume, and re-copy the file whenever you update it.
+- **Responsive Design:** Optimized layouts for desktop, tablet, and mobile devices.
+- **Dark and Light Themes:** Theme switching with browser preference persistence.
+- **Interactive Navigation:** Smooth section navigation and active-section highlighting.
+- **Professional Introduction:** Profile photo, headline, introduction, and social links.
+- **Project Showcase:** Dedicated project cards with descriptions, technology stacks, and repository links.
+- **Research Section:** Highlights my research work and IEEE publication.
+- **Internship Experience:** Displays professional experience and relevant contributions.
+- **Technical Skills:** Skills organized into clear categories.
+- **Resume Download:** Downloadable PDF resume.
+- **SEO Optimization:** Meta descriptions, Open Graph tags, Twitter metadata, and structured data.
+- **Accessibility:** Keyboard navigation, visible focus indicators, skip navigation link, and reduced-motion support.
 
-## Links (all set in `src/data/site.js`)
+## Tech Stack
 
-| Item | Link |
+| Category | Technologies |
 |---|---|
-| LinkedIn (hero, contact, footer, structured data) | https://www.linkedin.com/in/parimala-dharshini-903b4a271/ |
-| Student Dropout Prediction (OULAD) | github.com/Parimala-15/OULAD-Dropout |
-| Innomatics (two repository links, in the internship entry and the project card) | `Innomatics`, `Innomatics_MLFlow-ass` |
-| Spectrum sensing project files | Google Drive folder (button: View Project Files) |
-| IEEE publication / Google Scholar | ieeexplore.ieee.org/document/11545535 and the Scholar citation URL |
-| Cardio-Bot, Xeno CRM, Timetable, Muththamizh | Repositories from your earlier URLs |
-| Cover Letter Generator (Infosys), AI-powered-Data-Insights (Excelerate) | Mapping inferred from repo names: confirm |
-| Eye Tracker | No repository URL supplied, so no GitHub button |
-| Live demos | None exist, so none are shown. Set `demo` on a project only when a deployed URL is real |
+| Frontend | React 18, JavaScript, HTML5, CSS3 |
+| Build Tool | Vite |
+| Styling | Custom CSS |
+| Development Tools | VS Code, npm |
+| Version Control | Git, GitHub |
+| Deployment | Vercel / Netlify |
 
-The Sentiment analysis repository link was removed because it did not resolve. The Drive folder's sharing setting is unchecked: open the link in a private window to see whether visitors can view it.
+## Featured Projects
 
-## Numbers that need verification
+The portfolio showcases projects across AI/ML, Generative AI, NLP, Computer Vision, and Web Development.
 
-Results marked `verified: false` in `site.js` appear on the site as **"Self-reported result."** After you check one against your source, set `verified: true` and it becomes "Result."
-
-| Claim | Check against | Why flagged |
+| Project | Description | Technologies |
 |---|---|---|
-| **Spectrum sensing: 73.64% overall accuracy, 0.988 ROC-AUC (conflict, needs your decision)** | Tables in your IEEE QPAIN 2026 paper | Another resume says "73.64% in low-SNR conditions" and "220,000 samples". Also confirm the title, the 4-stage curriculum and the SNR range (-20 to +18 dB) |
-| Cardio-Bot: 35% fewer hallucinations, 90% relevance | Your test logs | Not in the public README. Be ready to say how many queries and who judged them |
-| Timetable: 70% less manual scheduling effort | How you measured it | Not in the public README. The README lists HTML/CSS/JS as the frontend, so also confirm the Streamlit dashboard claim |
-| Dropout (OULAD course project): 78.28% accuracy, 0.65 ROC-AUC | Your notebook | Kept **separate** from the Excelerate internship model (88% accuracy, 20% F1 gain). No source shows they are the same experiment. If they are, merge them |
-| Excelerate: 88% accuracy, 20% F1 improvement | Your internship report | Not flagged on the site yet; check before interviews |
+| Cardio-Bot | RAG-based healthcare chatbot for retrieving relevant heart-health information. | Python, Streamlit, LangChain, ChromaDB, SentenceTransformers |
+| Xeno CRM | CRM application with customer management, campaign analytics, and an AI-powered copilot. | React, Vite, FastAPI, MySQL, Gemini API |
+| Timetable Management System | Web-based timetable management application with database operations. | Flask, MySQL, HTML, CSS, JavaScript |
+| Muththamizh | Tamil NLP chatbot with language-related capabilities. | Python, NLP, Generative AI |
+| Student Dropout Prediction | Machine learning project for predicting student dropout patterns using educational data. | Python, PySpark, Machine Learning |
+| Eye Tracker | Computer vision project for eye tracking and visual interaction. | Python, OpenCV, MediaPipe |
+| Spectrum Sensing | Research project on deep-learning-based spectrum sensing for cognitive radio networks. | Python, Deep Learning, CLDNN, Attention |
 
-Also: Cardio-Bot's README says it uses the BioMistral-7B GGUF model, while your resume lists Cohere API, LangChain and ChromaDB. Make sure both descriptions match what the code does.
+For detailed descriptions, implementation information, and source code, visit the Projects section of the portfolio.
 
-## Git and security
+## Research Publication
 
-`.gitignore` excludes `node_modules/`, `dist/`, all `.env` files (except `.env.example`), keys and certificates, logs and editor files. This project contains no API keys or secrets; the only environment variable is the public site URL. **Never put a secret in a `VITE_` variable**, because Vite bundles those into public JavaScript.
+**Efficient Spectrum Sensing for Cognitive Radio Networks Using Curriculum Learning-Based CLDNN with Attention**
 
-Your public **Timetable-Management-System** repo shows `venv/`, `__pycache__/`, `Timetable.log`, `config.py` and several password/admin scripts. Open `config.py` and the scripts, and if any contains a real database password, change that password now and remove the files from git history. Add a `.gitignore` there for `venv/`, `__pycache__/`, `*.log` and `.env`.
+Research work presented at the **2026 IEEE 2nd International Conference on Quantum Photonics, Artificial Intelligence and Networking (QPAIN 2026)**.
+
+The portfolio includes links to the IEEE publication, Google Scholar, and project resources.
+
+## Internship Experience
+
+The portfolio highlights my internship experiences, including:
+
+- **Infosys Springboard** – Generative AI Internship
+- **Innomatics Research Labs** – Machine Learning Internship
+- **Excelerate** – AI-Powered Data Insights and Prompt Engineering Internship
+
+Additional project details and contributions are available in the Experience section.
+
+---
+
+## Getting Started
+
+Follow these steps to run the portfolio locally.
+
+### Prerequisites
+
+Install the following:
+
+- [Node.js](https://nodejs.org/) – Use a currently supported LTS version.
+- npm – Included with Node.js.
+- [Git](https://git-scm.com/) – For version control.
+
+Verify the installations:
 
 ```bash
-cp .env.example .env.local     # then edit VITE_SITE_URL
-git init
-git add .
-git status                      # confirm no .env file is listed
-git commit -m "Portfolio"
-git branch -M main
-git remote add origin https://github.com/Parimala-15/portfolio.git
-git push -u origin main
+node -v
+npm -v
+git --version
 ```
 
-## Deploy (Vercel)
+### 1. Clone the Repository
 
-1. Sign in at https://vercel.com with GitHub, choose **Add New > Project**, and import the repo (Vite is auto-detected).
-2. Add the environment variable `VITE_SITE_URL` = your final URL (for example `https://your-name.vercel.app`) and deploy. If it is not set, the canonical and og:url tags are left out rather than filled with a wrong address.
-3. Every `git push` redeploys. GitHub Pages: build with `VITE_BASE=/portfolio/`.
+```bash
+git clone https://github.com/Parimala-15/parimala-portfolio.git
+```
 
-## Quality notes
+### 2. Navigate to the Project Directory
 
-- Theme: follows your system setting, with a Dark/Light toggle in the menu (saved in your browser).
-- Mobile menu opens with the Menu button and closes with Escape or a link click.
-- Skip link, visible focus outlines, list roles, reduced-motion support.
-- SEO: description, Open Graph, Twitter and JSON-LD tags. The site is a single-page app: add `og:image` (1200x630) later for link previews.
+```bash
+cd parimala-portfolio
+```
 
-## Checklist before publishing
+### 3. Install Dependencies
 
-- [x] `public/resume.pdf` present
-- [ ] Spectrum sensing numbers checked against the IEEE paper, then `verified: true`
-- [ ] Cardio-Bot and Timetable numbers verified (or removed), then `verified: true`
-- [ ] Confirm the Infosys and Excelerate repo mapping
-- [x] LinkedIn URL set to /in/parimala-dharshini-903b4a271/ everywhere
-- [ ] Open every external link once (none could be checked automatically)
-- [ ] Credential URLs for certifications (optional)
-- [ ] `VITE_SITE_URL` set in Vercel
-- [ ] Timetable repo checked for passwords and generated files
-- [ ] Run `npm install && npm run build` successfully, and test on your phone
+```bash
+npm install
+```
 
-## What was tested (and what was not)
+### 4. Start the Development Server
 
-Tested with a real Chromium browser against an esbuild bundle of this source (React 19 dev build, because Vite could not be installed): no console errors or React key warnings, no horizontal scrolling at 360, 390, 768, 1024, 1440 and 1920 px, light and dark themes, theme toggle and its persistence, mobile menu with Escape, scroll-spy active link, photo fallback, and that all 25 external links open in a new tab with `rel="noopener noreferrer"`. The one React warning seen there (`fetchpriority`) is a React 19 vs 18 difference: the project pins React 18.3.1, where the lowercase attribute is correct.
+```bash
+npm run dev
+```
 
-Not tested: the real Vite production build, `npm audit`, Google Fonts (blocked there, so system fonts were shown), real phones, Safari and Firefox, screen readers.
+Open the local development URL:
 
-Open Graph and JSON-LD use `/profile.jpg` as the preview image once `VITE_SITE_URL` is set. For GitHub Pages, set `VITE_SITE_URL` to the full address including the repo path.
+```text
+http://localhost:5173
+```
+
+### 5. Create a Production Build
+
+```bash
+npm run build
+```
+
+The optimized production files will be generated inside the `dist/` directory.
+
+### 6. Preview the Production Build
+
+```bash
+npm run preview
+```
+
+---
+
+## Project Structure
+
+```text
+parimala-portfolio/
+│
+├── public/
+│   ├── resume.pdf
+│   └── profile.jpg
+│
+├── src/
+│   ├── components/
+│   │   ├── ExternalLink.jsx
+│   │   ├── Footer.jsx
+│   │   ├── Header.jsx
+│   │   ├── Hero.jsx
+│   │   ├── ProfilePhoto.jsx
+│   │   ├── ProjectItem.jsx
+│   │   ├── ResearchPanel.jsx
+│   │   ├── Section.jsx
+│   │   ├── SignalArt.jsx
+│   │   ├── SignalBand.jsx
+│   │   └── SocialLinks.jsx
+│   │
+│   ├── data/
+│   │   └── site.js
+│   │
+│   ├── lib/
+│   │   └── rng.js
+│   │
+│   ├── App.jsx
+│   ├── hooks.js
+│   └── styles.css
+│
+├── .env.example
+├── .gitignore
+├── index.html
+├── package.json
+├── package-lock.json
+├── README.md
+└── vite.config.js
+```
+
+*The structure above describes the main application files; additional configuration or asset files may also be present.*
+
+## Customization
+
+Most portfolio content is maintained in:
+
+```text
+src/data/site.js
+```
+
+You can update:
+
+- Personal introduction and headline
+- Social media and contact links
+- Project descriptions and repository URLs
+- Internship details
+- Technical skills
+- Research information
+- Resume download configuration
+
+The visual appearance and responsive layouts can be modified in:
+
+```text
+src/styles.css
+```
+
+Reusable UI components are maintained in:
+
+```text
+src/components/
+```
+
+### Updating Your Resume
+
+Replace the existing resume with your latest PDF, keeping the filename:
+
+```text
+public/resume.pdf
+```
+
+The application uses this file for the resume download links.
+
+## Deployment
+
+### Deploy Using Vercel
+
+1. Visit [Vercel](https://vercel.com/).
+2. Sign in using your GitHub account.
+3. Select **Add New → Project**.
+4. Import `Parimala-15/parimala-portfolio`.
+5. Verify the Vite build configuration.
+6. Configure the environment variable:
+
+```text
+VITE_SITE_URL=https://your-portfolio-domain.vercel.app
+```
+
+7. Click **Deploy**.
+
+Vercel will build and host the portfolio.
+
+Future pushes to the connected GitHub branch can automatically trigger deployments.
+
+### GitHub Pages
+
+For GitHub Pages deployment under this repository, configure the Vite base path as:
+
+```text
+VITE_BASE=/parimala-portfolio/
+```
+
+Follow the repository's Vite configuration and deployment workflow when publishing.
+
+## Environment Variables
+
+The portfolio uses the following public configuration variable:
+
+| Variable | Purpose |
+|---|---|
+| `VITE_SITE_URL` | Sets the canonical website URL and social-sharing URL metadata. |
+
+Example:
+
+```env
+VITE_SITE_URL=https://your-portfolio-domain.vercel.app
+```
+
+Never store API keys, passwords, private tokens, or other secrets in variables prefixed with `VITE_`. These values can become accessible in the client-side application.
+
+## Quality Assurance
+
+The application has undergone browser-based checks using an esbuild-generated bundle.
+
+Previously tested:
+
+- Responsive layouts at multiple viewport widths.
+- Dark and light theme switching.
+- Theme preference persistence.
+- Mobile navigation and Escape-key handling.
+- Active navigation highlighting.
+- Profile image fallback.
+- External link safety attributes.
+- Browser console and React key warnings.
+
+**Verification limitations:**
+
+The original upgrade environment could not access the npm registry. Consequently, the genuine Vite production build and npm security audit were not completed there.
+
+The following checks should be completed locally before production deployment:
+
+```bash
+npm install
+npm run build
+npm audit
+```
+
+Also test the deployed website on actual mobile devices and additional browsers.
+
+## Security Notes
+
+- Do not commit `.env` files, API keys, passwords, or private credentials.
+- Keep `node_modules/` and `dist/` out of Git.
+- Review external repository links before publishing.
+- Ensure that public documents and Google Drive resources have the intended sharing permissions.
+- Review project repositories for accidentally committed credentials or sensitive configuration files.
+
+## Connect With Me
+
+**Parimala Dharshini M.**
+
+- [LinkedIn](https://www.linkedin.com/in/parimala-dharshini-903b4a271/)
+- [GitHub](https://github.com/Parimala-15)
+
+For professional opportunities, collaborations, and technical discussions, feel free to connect.
+
+---
+
+*Built with React and Vite. Continuously evolving as I learn, build, and explore new technologies.*
